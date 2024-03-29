@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 95vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+.header_container
+{
+    margin-bottom: 3rem;
+}
+.header_title{
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 2rem;  /*line-height: This property determines the amount of space used for lines, specifically the vertical distance between the baselines of two consecutive lines of text.*/
+    font-weight: 700; /*This value is one of the numerical values associated with the font weight. In CSS, 700 usually corresponds to the "bold" font weight. Different numerical values represent different levels of thickness, with 400 being the standard or "normal" weight, and 700 typically representing "bold".*/
+    
+}
+.header_desc
+{
+    max-width: 500px;
+    margin: 0 auto;
+    color: rgb(53, 51, 51);
+    text-align: center;
+}
+.main_container{
+    display: grid;
+    gap: 1.5rem; /*only used when display is set to grid*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    justify-content: center;
+   
+}
+.card_container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(100, 89, 89);
+    border-radius: 8px;
+    
+}
+.card_image_container{
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+.card_image{
+    object-fit: cover; 
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card_title_container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.card_container:hover .card_image{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.card_title{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: rgb(21, 20, 20);
+}
+.ancher_card_title:hover .card_title
+{
+    color: blue;
+}
+.card_desc
+{
+    color: rgb(123, 114, 114);
+    font-size: 1rem;
+}
+.card_footer_container
+{
+    display: flex;
+    justify-content: space-between;
+}
+.author_container
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem;
+
+}
+.author_avatar_container
+{
+    height: 2.5rem;
+    width: 2.5rem;
+    border: solid black;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: rgb(105, 97, 97);
+}
+.author_info_container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.author_name{
+    color: rgb(38, 38, 149);
+}
+
+.author_date{
+    color: rgb(136, 126, 126);
+}
+.card_tag_container
+{
+    font-size: 0.79rem;
+    border: 1px solid rgb(76, 71, 71);
+    border-radius: 4px;
+    line-height: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    color: grey;
+    margin-right: 5px;
+}
+.card_div{
+    display: flex;
+    align-items: center;
+}

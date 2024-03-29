@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Styling for containers */
+    .container{
+        background-color: rgb(26, 154, 111);
+        border: dashed 5px black;
+        height: 800px;
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        /*flex-wrap: wrap; */ /* Flex items will not wrap */
+        justify-content: center;
+        align-items: end;
+    }
+    .container2{
+        background-color: rgb(26, 154, 111);
+        border: dashed 5px black;
+        height: 500px;
+        width: 500px;
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap; /* Flex items will wrap */
+        flex-flow: column wrap; /* Flex items will wrap in columns */
+    }
+    /* Styling for boxes */
+    .box
+    {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        margin: 10px;
+    }
+    /* Styling for specific boxes */
+    #box1
+    {
+        background-color: darkblue;
+        align-self:baseline; /* Aligns the box to the baseline */
+        justify-self: start; /* Aligns the box to the start horizontally */
+    }
+    #box2
+    {
+        background-color: rgb(155, 210, 53);
+    }
+    #box3
+    {
+        background-color: rgb(193, 48, 135);
+    }
+    #box4
+    {
+        background-color: rgb(223, 39, 45);
+    }
+</style>
+<body>
+    <!-- Heading -->
+    <h2 style="background-color: azure; border: 2px black solid">LECTURE 20 FLEXBOX</h2>
+    <br>
+    <br>
+    <!-- First container with flex items -->
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <!-- Second container with flex items -->
+    <div class="container2">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <!-- Topic included list -->
+    <span style="display: list-item; font-size:50px; "><b>topic included</b></span>
+    <!-- Description of topics -->
+    <div style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:30px">
+        flex wrap, flex flow, justify content (for horizontal movement), align items (for vertical movement), flex shrink, align self (for taking the single box)
+    </div>
+</body>
+</html>
+

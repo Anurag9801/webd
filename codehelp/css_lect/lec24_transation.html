@@ -1,0 +1,85 @@
+Here's the given HTML code with comments added to explain each section:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document -->
+    <title>Document</title>
+</head>
+<style>
+    /* Styles for the container */
+    .container{
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Styles for the box */
+    .box{
+        /* Set font size to larger */
+        font-size: larger;
+        /* Set height of the box to 50 pixels */
+        height: 50px;
+        /* Set width of the box to 100 pixels */
+        width: 100px;
+        /* Center text horizontally within the box */
+        text-align: center;
+        /* Set line height to vertically center the text */
+        line-height: 50px;
+        /* Add a 3 pixel solid black border around the box */
+        border: 3px solid black;
+        /* Set background color to a dark red */
+        background-color: #991111;
+        /* Add a border radius of 10 pixels to give the box rounded corners */
+        border-radius: 10px;
+        /* Position the box relatively */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* Define CSS transitions for all properties */
+        transition-property: all;
+        /* Set the duration of the transition to 4 seconds */
+        transition-duration: 4s;
+        /* Set a delay of 0.5 seconds before the transition starts */
+        transition-delay: 0.5s;
+        /* Set the timing function of the transition to linear */
+        transition-timing-function: linear;
+    }
+
+    /* Styles for the box when hovered over */
+    .box:hover{
+        /* Move the box 200 pixels down and 25% from the left when hovered over */
+        top: 100px;
+        left: 25%;
+        /* Increase the height of the box to 200 pixels when hovered over */
+        height: 200px;
+        /* Increase the width of the box to 800 pixels when hovered over */
+        width: 800px;
+        /* Increase font size to 100 pixels when hovered over */
+        font-size: 100px;
+        /* Change background color to aqua when hovered over */
+        background-color: aqua;
+    }
+</style>
+<body>
+    <!-- Heading for the page -->
+    <h2>lecture 24 transation </h2>
+    <br>
+    <!-- Container for the box -->
+    <div class="container">
+        <!-- Box element -->
+        <div class="box">
+            summit
+        </div>
+    </div>
+</body>
+</html>

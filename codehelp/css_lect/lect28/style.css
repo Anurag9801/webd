@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+
+}
+.container
+{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    display: grid;
+    gap: 1rem;
+    /* row-gap: 1rem;
+    column-gap: 1rem; */
+    padding: 4rem;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr); */
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+
+}
+/* for making site responsive we will use the media quaries
+ */
+@media(min-width:750px)
+{
+    .container{
+        /* take the max no of rows and column as shown in the  picture */
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+        /* start and end from 1 to i+1 and j+1 respectively */
+    }
+    .header,.footer
+    {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .sidebar
+    {
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .content1
+    {
+        grid-column-start: 2;
+        grid-column-end: 4;
+
+    }
+}
+.item
+{
+
+    border: solid black 2px;
+    display: flex;
+    background-color: lightcoral;
+    align-items: center;
+    justify-content: center;
+
+}

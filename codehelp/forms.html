@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+
+        <label for="email" > <b>Enter email id</b></label>
+        <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+        <br>
+        <br>
+        <label for="password"><i>Enter password</i></label>
+        <input type="password" id="password" placeholder="enter your password">
+
+        <!-- vaule is used for give predefined value for the input and placeholder is used for apeared text -->
+
+        <br>
+        <br>
+        <input type="submit" value="login ">
+        <button>forgot password</button>
+        <br>
+    </form>
+    <h3>example 2</h3>
+    <br>
+    <br>
+    <form >
+        <fieldset>
+
+            <legend style="color:red;">Food order</legend>
+
+            <label for="datetaker"> Give DOB </label>
+            <input type="date" id="datetaker">
+            
+            <br>
+            <br>
+            <!-- use of select tag -->
+            <label for="food"> <b><i>choose your food </i></b></label>
+            <select name="food" id="option1" >
+                
+                <option value="noodles">maggie</option>
+                <option value="cold drink "> pepsi</option>
+            <option value="juice">juice</option>
+            <option value="cream">cream</option>
+        </select>
+        
+        <br>
+        <br> 
+        <button><b>Summit Order</b></button>
+        <br>
+        <br>
+        <label for="feedback">Give your important feedback</label>
+        <br>
+        
+        <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Start from here"></textarea>
+    </fieldset>
+        <br>
+        <br>
+        <label for="download">download the recipt</label>
+        <br>
+        <input type="image" id="download" alt="download now" src="unnamed.png" height="50px" width="50px">
+        <br>
+        <br>
+        
+            <label>
+              <input type="radio" name="gender" value="male"> Male
+            </label>
+            <label>
+              <input type="radio" name="gender" value="female"> Female
+            </label>
+            <label>
+              <input type="radio" name="gender" value="other"> Other
+            </label>
+          
+        <br>
+        <br>
+        
+        <label for="file">Upload </label>
+        <input type="file">
+
+        <br>
+        <br>
+        <label >
+            <input type="checkbox" name="subject" value="english"> english
+        </label>
+        
+
+        <label >
+            <input type="checkbox" name="subject" value="hindi">hindi
+        </label>
+        
+
+        <label >
+            <input type="checkbox" name="subject" value="math">math
+        </label>
+        
+
+
+    </form>
+
+
+
+</body>
+</html>

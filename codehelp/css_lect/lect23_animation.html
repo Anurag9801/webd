@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    /*#box1{
+        width: 300px;
+        height: 100px;
+        margin: 20px;
+        background-color: blue;
+        border: solid yellow 4px;
+        position: relative;
+        
+        animation: rightmovement 3s cubic-bezier(0.075, 0.82, 0.165, 1) 1s 3  alternate   forwards;
+            /* animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            /* animation-delay: 1s; */
+            /* animation-timing-function: linear; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: backwards;  */
+        /*animation: name duration timing-function delay iteration-count direction fill-mode;
+    }*/
+    #box1{
+        width: 300px;
+        height: 100px;
+        margin: 20px;
+        background-color: blue;
+        border: solid yellow 4px;
+        position: relative;
+        
+        animation: rightmovement 3s linear 1s 3  alternate   forwards;
+            /* animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            /* animation-delay: 1s; */
+            /* animation-timing-function: linear; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: backwards;  */
+        /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    }
+
+    @keyframes rightmovement {
+        from
+        {
+            top:0;
+            left: 0;
+
+        }
+        to {
+            top: 0;
+            left: 1200px;
+        }
+    }
+    #box2{
+        width: 300px;
+        height: 100px;
+        margin: 20px;
+        background-color: blue;
+        border: solid yellow 4px;
+        position: relative;
+        
+        animation: leftmovement 3s linear 1s 3  alternate-reverse  forwards;
+            /* animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            /* animation-delay: 1s; */
+            /* animation-timing-function: linear; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-fill-mode: backwards;  */
+        /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    }
+    
+    @keyframes leftmovement {
+        from
+        {
+            top:500px;
+            left: 0;
+
+        }
+        to {
+            top: 500px;
+            left: 1200px;
+        }
+    }
+    #circle
+    {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        background-color: rgb(19, 198, 222);
+        position: relative;
+        top: 40%;
+        left: 40%;
+        animation: circlemovement 6s  linear infinite alternate ;
+    }
+    @keyframes circlemovement {
+        0% {
+         top: 1%;
+         left: 5%;
+        }
+        30% {
+         top: 5%;
+         left: 90%;
+        }
+
+        60% {
+         top: 70%;
+         left: 10%;
+        }
+        100%{
+         top: 75%;
+         left: 90%;
+        }
+
+     }
+</style>
+<body>
+    <h2 style="background-color: aqua;">lecture 23 animation</h2>
+    <br>
+    <br>
+    <div class="container">
+        <div id="box1">
+
+        </div>
+        <div id="box2">
+
+        </div>
+        <div id="circle">
+
+        </div>
+    </div>
+</body>
+</html>

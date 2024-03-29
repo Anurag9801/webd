@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the document -->
+    <title>Document</title>
+</head>
+<style>
+    /* Styling for the container */
+    .container
+    {
+        --primary_color:rgb(208, 233, 70); /* Custom property for primary color */
+        background-color: rgb(180, 202, 221); /* Background color */
+        margin: 10px; /* Margin */
+        padding: 10px; /* Padding */
+        border: 4px solid var(--primary_color); /* Border with primary color */
+        height: 500px; /* Height */
+        width: 90%; /* Width */
+        display: flex; /* Flex display */
+        justify-content: center; /* Center content horizontally */
+        align-items: center ; /* Center content vertically */
+    }
+    /* Styling for the box */
+    .box
+    {
+        margin: 15px; /* Margin */
+        padding: 15px; /* Padding */
+        border: 2px dotted var(--primary_color); /* Border with primary color */
+        background-color: aquamarine; /* Background color */
+        width: 200px; /* Width */
+        height: 200px; /* Height */
+        overflow: auto; /* Enable scrolling for overflow content */
+        box-shadow: 10px 5px blue, 15px 10px 10px green; /* Box shadow */
+    }
+    /* Styling for the heading */
+    #h3{
+        text-shadow: 5px 4px 4px pink; /* Text shadow */
+    }
+</style>
+<body>
+    <!-- Container div -->
+    <div class="container">
+        <!-- Box div -->
+        <div class="box">
+            <!-- Heading -->
+            <h3 id="h3">This is heading</h3>
+            <!-- Lorem ipsum text -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolor sint ullam incidunt, deserunt praesentium excepturi rerum minima vel provident numquam illum commodi quaerat vitae? Impedit asperiores harum dolor minus cumque rerum iusto dolores corrupti non deserunt, repudiandae ipsam accusantium est aliquam consequatur illo vero quisquam laborum reprehenderit corporis sint?
+        </div>
+    </div>
+</body>
+</html>

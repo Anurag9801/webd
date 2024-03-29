@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2>This file contain about the table</h2>
+
+
+        <table border="2">
+            <thead>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>gender</th>
+                <th>ID</th>
+            </thead>
+            <tbody>
+                <!-- (tr>(td*3))*4 is the formula -->
+                <tr>
+                    <td>anu</td>
+                    <td>34</td>     
+                    <td>f</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>ATUL</td>
+                    <td>45</td>
+                    <td>m</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>ABHI</td>
+                    <td>11</td>
+                    <td>34</td>
+                    <td>67</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Now using the span keyword for make change in the table</h3>
+        <table border="2">
+            <thead>
+                <th>A</th>
+                <th>BC</th>
+                <th>DE</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">abhi</td>
+                    <td>34</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    
+                    <td>12</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td colspan="3">neer</td>
+                    
+                </tr>
+                <tr>
+                    <td>bib</td>
+                    <td>01</td>
+                    <td>21</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3> here a another example</h3>
+        <table border="4">
+
+            <thead>
+                <th>S.no</th>
+            <th>NAME</th>
+            <th>POS</th>
+            <th>SALARY</th>
+        </thead>
+        <tbody>
+            <tr>
+                
+                <td>mark</td>
+                <td>facebook</td>
+                <td>2B</td>
+                <td rowspan="4">ceo</td>
+            </tr>
+            <tr>
+                <td>musk</td>
+                <td>twitter</td>
+                <td>3B</td>
+            </tr>
+            <tr>
+                <td>satya</td>
+                <td>microsoft</td>
+                <td>3.5B</td>
+            </tr>
+            <tr>
+                <td>steave jobs</td>
+                <td>apple</td>
+                <td>1B</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+                <td colspan="2">Total Expanse :-</td>
+                <td>10B</td>
+        </tfoot>
+    </table>
+    </body>
+    </html>
